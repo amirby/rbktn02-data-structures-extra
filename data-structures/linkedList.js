@@ -1,4 +1,4 @@
-/*
+/* 
 
 LINKED LIST
 
@@ -92,21 +92,44 @@ function LinkedList(headValue) {
 
 LinkedList.prototype.forEach = function(callback) {
   // implement me...
+  var current = this.head;
+  while(current){
+    callback(current.value);
+    current = current.next;
+  }
 };
-// Time complexity:
+// Time complexity: O(n)
 
 LinkedList.prototype.print = function() {
   // implement me...
+  return this.forEach(function(x){
+     console.log(x)
+  })
 };
 // Time complexity:
 
 LinkedList.prototype.insertAfter = function(node, value) {
   // implement me...
+  var nodeToAdd = new Node(value);
+  var current = this.head ;
+  while(current.value !== node){
+    current = current.next;
+  }
+  nodeToAdd.next = current.next;
+  current.next = nodeToAdd;
+
 };
 // Time complexity:
 
 LinkedList.prototype.removeAfter = function(node) {
+
   // implement me...
+  var current = this.head ;
+  while(current.value !== node){
+    current = current.next;
+  }
+  current.next = current.next.next
+  
 };
 // Time complexity:
 

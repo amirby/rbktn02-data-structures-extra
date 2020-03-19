@@ -10,4 +10,4 @@ Welcome to the exercises. This is where the magic happens!
  - Hav fun Playing around while understanding one of the hardest concepts
  - Try to Cover as much as you can from these data structures
  - You don't need to finish them all in one day
- - The Exercises might be a little bit tricky so hold your Heads and Hav Fun
+ - The Exercises might be a little bit tricky so hold your Heads and Hav Fun 
